@@ -11,8 +11,20 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/backToLearning"
+        app:layout_constraintStart_toStartOf="@+id/backToLearning"
+        app:layout_constraintTop_toBottomOf="@+id/backToLearning"
+        app:srcCompat="@android:mipmap/sym_def_app_icon" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/backToLearning"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@color/purple_200"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:mipmap/sym_def_app_icon" />
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

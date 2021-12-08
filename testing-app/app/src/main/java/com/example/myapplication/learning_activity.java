@@ -30,6 +30,7 @@ public class learning_activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_learning);
         getComponents();
+        setUpAction();
         clickFunctions();
     }
 
