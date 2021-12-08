@@ -1,6 +1,8 @@
 package com.example.myapplication;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -13,11 +15,13 @@ public class result_activity extends AppCompatActivity {
     Button share_btn;
     TextView result;
     Button Home_btn;
+    Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
         loadUI();
+        setUpAction();
         clickFunction();
     }
 
@@ -28,6 +32,14 @@ public class result_activity extends AppCompatActivity {
         Home_btn=(Button) findViewById(R.id.Home_btn);
         share_btn.setBackgroundColor(Color.parseColor("#FF6200EE"));
         Home_btn.setBackgroundColor(Color.parseColor("#FF6200EE"));
+        toolbar=(Toolbar) findViewById(R.id.backToQuiz);
+    }
+    void setUpAction(){
+        setSupportActionBar(toolbar);
+        ActionBar ab = getSupportActionBar();
+
+        // Enable the Up button
+        ab.setDisplayHomeAsUpEnabled(true);
     }
 
     void clickFunction(){

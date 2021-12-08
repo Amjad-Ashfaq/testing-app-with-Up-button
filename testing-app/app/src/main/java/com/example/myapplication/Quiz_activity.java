@@ -1,6 +1,8 @@
 package com.example.myapplication;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -12,6 +14,7 @@ import android.widget.TextView;
 public class Quiz_activity extends AppCompatActivity {
     Button opt1, opt2, opt3, opt4, next_btn;
     TextView ques, score_val, result;
+    Toolbar toolbar;
     int i = 0, score=0;
     String question[] = {"1. To pronounce halqiyah huruf, sound produced from:",
             "2. To pronounce lahatiyah huruf, sound produced from:",
@@ -32,6 +35,7 @@ public class Quiz_activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
         loadUI();
+        setUpAction();
         clickFunc();
     }
 
@@ -40,6 +44,7 @@ public class Quiz_activity extends AppCompatActivity {
         opt2 = (Button) findViewById(R.id.opt2);
         opt3 = (Button) findViewById(R.id.opt3);
         opt4 = (Button) findViewById(R.id.opt4);
+        toolbar=(Toolbar) findViewById(R.id.backToMain);
         next_btn = (Button) findViewById(R.id.next_btn);
         next_btn.setText("Next");
         ques = (TextView) findViewById(R.id.question);
@@ -56,7 +61,13 @@ public class Quiz_activity extends AppCompatActivity {
         opt3.setBackgroundColor(Color.parseColor("#FF6200EE"));
         opt4.setBackgroundColor(Color.parseColor("#FF6200EE"));
     }
+    void setUpAction(){
+        setSupportActionBar(toolbar);
+        ActionBar ab = getSupportActionBar();
 
+        // Enable the Up button
+        ab.setDisplayHomeAsUpEnabled(true);
+    }
     void clickFunc() {
         opt1.setOnClickListener(new View.OnClickListener() {
             @Override
