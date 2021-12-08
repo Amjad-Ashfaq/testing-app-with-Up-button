@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toolbar;
 
 import java.io.ByteArrayOutputStream;
 
@@ -22,6 +23,7 @@ public class learning_activity extends AppCompatActivity {
     Button lasaviyah_btn;
     Button ghunna_btn;
     ImageView learn_img;
+    Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,8 +41,11 @@ public class learning_activity extends AppCompatActivity {
         lasaviyah_btn=(Button) findViewById(R.id.lasaviyah);
         ghunna_btn=(Button) findViewById(R.id.ghunna);
         learn_img=(ImageView) findViewById(R.id.learn_img);
+        toolbar=(Toolbar) findViewById(R.id.upActionBar);
     }
 
+    void setUpAction(){
+    }
     void clickFunctions(){
         halqiyah_btn.setOnClickListener(new View.OnClickListener() {
             @Override
