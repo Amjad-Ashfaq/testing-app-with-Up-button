@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
@@ -46,6 +47,10 @@ public class learning_activity extends AppCompatActivity {
 
     void setUpAction(){
         setSupportActionBar(toolbar);
+        ActionBar ab = getSupportActionBar();
+
+        // Enable the Up button
+        ab.setDisplayHomeAsUpEnabled(true);
     }
     void clickFunctions(){
         halqiyah_btn.setOnClickListener(new View.OnClickListener() {
