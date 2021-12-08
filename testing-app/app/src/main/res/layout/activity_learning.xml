@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".learning_activity">
+
+    <Button
+        android:id="@+id/ghunna"
+        android:layout_width="221dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Ghunna"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/niteeyah"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/niteeyah"
+        app:layout_constraintTop_toBottomOf="@+id/lasaviyah" />
+
+    <Button
+        android:id="@+id/halqiyah_button"
+        android:layout_width="221dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="72dp"
+        android:text="Halqiyah"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/niteeyah"
+        android:layout_width="221dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Niteeyah"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/tarfiyah"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tarfiyah"
+        app:layout_constraintTop_toBottomOf="@+id/tarfiyah" />
+
+    <Button
+        android:id="@+id/lasaviyah"
+        android:layout_width="221dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Lisaviyah"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/niteeyah"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/niteeyah"
+        app:layout_constraintTop_toBottomOf="@+id/niteeyah" />
+
+    <Button
+        android:id="@+id/tarfiyah"
+        android:layout_width="221dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Tarfiyah"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/shajariah"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/shajariah"
+        app:layout_constraintTop_toBottomOf="@+id/shajariah" />
+
+    <Button
+        android:id="@+id/shajariah"
+        android:layout_width="221dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="24dp"
+        android:text="Shajariyah"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/lahatiyah"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/lahatiyah"
+        app:layout_constraintTop_toBottomOf="@+id/lahatiyah" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="413dp"
+        android:layout_height="127dp"
+        android:background="@color/purple_500"
+        android:text="Learning makharij al-huruf"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/lahatiyah"
+        android:layout_width="221dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:text="Lahatiyah"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/halqiyah_button"
+        app:layout_constraintStart_toStartOf="@+id/halqiyah_button"
+        app:layout_constraintTop_toBottomOf="@+id/halqiyah_button" />
+</androidx.constraintlayout.widget.ConstraintLayout>
